@@ -7,7 +7,6 @@
 
 int main()
 {
-    char *mssg[100];
     int serversocket,clientsocket,port; //clientsocket is the socket descriptor , port is the port number
     struct sockaddr_in serveraddr,clientaddr; //creating a structure of type sockaddr_in for server
     socklen_t len; //creating a variable to store the length of the server address 
