@@ -38,7 +38,6 @@ int main()
 		start++;
 		end--;
 	}
-    printf("%s",message);
     write(clientsocket,message,sizeof(message));//sending the message to the client
     close(clientsocket);//closing the client socket
     close(serversocket);//closing the server socket
