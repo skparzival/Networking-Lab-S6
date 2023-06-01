@@ -12,7 +12,6 @@ int main()
     struct sockaddr_in serveraddr,clientaddr; //creating a structure of type sockaddr_in for server
     socklen_t len; //creating a variable to store the length of the server address 
     char message[100]; 
-    struct serveraddr; //creating a structure of type sockaddr_in for server
     serversocket=socket(AF_INET,SOCK_STREAM,0); //creating a socket
     bzero((char*)&serveraddr,sizeof(serveraddr));//initializing the server address to zero
     serveraddr.sin_family=AF_INET;//setting the family of the server address to AF_INET
