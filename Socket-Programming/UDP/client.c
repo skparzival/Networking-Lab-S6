@@ -10,7 +10,6 @@ int main()
     int clientsocket,port; //clientsocket is the socket descriptor , port is the port number
     struct sockaddr_in serveraddr; //creating a structure of type sockaddr_in for server
     socklen_t len; //creating a variable to store the length of the server address
-    struct hostent *server; //creating a structure of type hostent for server
     char message[50]; //creating a char array to store the message
     clientsocket=socket(AF_INET,SOCK_DGRAM,0);//creating a socket
     //steps involved in the server address creation.
