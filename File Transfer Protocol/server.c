@@ -22,7 +22,7 @@ int main()
      serveraddr.sin_family=AF_INET;
      serveraddr.sin_addr.s_addr=INADDR_ANY;
      serveraddr.sin_port=htons(TCP_PORT);
-     printf("\nBinded");
+     printf("Binded");
      bind(serversocket,(struct sockaddr*)&serveraddr, sizeof(serveraddr));
      printf("\nListening...");
      listen(serversocket, 5);
@@ -30,7 +30,7 @@ int main()
      clientsocket=accept(serversocket,(struct sockaddr*) &clientaddr,&clength);
      close(serversocket);
      read(clientsocket, &str, MAX);
-     printf("\nClient message\n File Name : %s\n", str);
+     printf("\nClient message\nFile Name: %s\n", str);
      f1=fopen(str, "r");
      while(fgets(buff, 4096, f1)!=NULL)
      {
@@ -38,6 +38,6 @@ int main()
           printf("\n");
      }
      fclose(f1);
-     printf("\nFile Transferred\n");
+     printf("File Transferred\n");
      return 0;
 }

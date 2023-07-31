@@ -18,7 +18,7 @@ int main()
    serveraddr.sin_addr.s_addr=inet_addr("127.0.0.1");
    serveraddr.sin_port=htons(TCP_PORT);
    connect(clientsocket,(struct sockaddr*)&serveraddr,sizeof(serveraddr));
-   printf("\nEnter the source file name : \n");
+   printf("Enter the source file name: ");
    scanf("%s",send);
    write(clientsocket,send,MAX);
    while((n=read(clientsocket,recvline,MAX))!=0)
