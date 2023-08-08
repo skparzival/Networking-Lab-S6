@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdio.h>
 #include<stdlib.h>
 int input(int a[],int frame_size)
 {
@@ -8,7 +7,6 @@ int input(int a[],int frame_size)
     {
         printf("Enter Value For Frame[%d]: ",i);
         scanf("%d",&a[i]);
-        // printf("\n");
     }
     return 1;
 }
